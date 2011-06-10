@@ -1,4 +1,4 @@
-var terms = 
+exports.terms = 
 ['Anakin',
 'C-3P0',
 'Yoda',
