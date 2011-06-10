@@ -4,15 +4,7 @@ var data = require('./data.js');
 var app = express.createServer(express.logger());
 
 app.get('/', function (request, response) {
-	response.write('<h1>Hello world from Star Wars Ipsum</h1>');
-	response.write('<p>');
-	
-	var ipsumText = '', i = 0;
-	while (ipsumText.length < 500) {
-		ipsumText += data.terms[i++];
-	}
-	
-	response.send(ipsumText + '</p>');
+	response.send('<h1>Hello world from Star Wars Ipsum</h1><p>' + data.terms[0] + '</p>');
 });
 
 var port = process.env.PORT || 3000;
