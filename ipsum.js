@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 app.set('view engine', 'jade');
 
 app.get('/', function (request, response) {
-	response.render('index');
+	response.render('index', {paragraphs:[]});
 });
 
 var port = process.env.PORT || 3000;
