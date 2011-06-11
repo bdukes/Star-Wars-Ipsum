@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"dependencies": {
 		"express": "2.x",
-		"jade": "0.9.x"
+		"jade": "0.12.x"
 	},
 	"engines": { "node": "0.4.x"  }
 }
