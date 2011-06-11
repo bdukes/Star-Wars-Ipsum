@@ -1,4 +1,5 @@
 /**
+ * from https://github.com/stellaeof/node_osrandom
  * osrandom node package
  * Provides simple access to os sources of randomness
  */
