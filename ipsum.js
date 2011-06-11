@@ -11,9 +11,9 @@ app.get('/', function (request, response) {
 });
 app.post('/', function (request, response) {
 	var paragraphs = ['', '', '', '', ''];
-	for (var i = 0; i < 5; i++) {
+	for (var i = 0, j = 0; i < 5; i++) {
 		while (paragraphs[i].length < 500) {
-			paragraphs[i] += data.terms[random(termCount).toString('base64')] + ' ';
+			paragraphs[i] += data.terms[j++] + ' ';
 		}
 	}
 
