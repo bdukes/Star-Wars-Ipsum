@@ -11,15 +11,14 @@ app.get('/', function (request, response) {
 });
 app.post('/', function (request, response) {
 	var paragraphs = ['', '', '', '', ''];
-	for (var i = 0, j = 0; i < 5; i++) {
+	for (var i = 0; i < 5; i++) {
 		while (paragraphs[i].length < 500) {
-			paragraphs[i] += data.terms[j++] + ' ';
+			paragraphs[i] += data.terms[Math.round(Math.Random(termCount))] + ' ';
 		}
 	}
 
 	response.render('index', {
-        paragraphs:paragraphs,
-        debug:random(termCount).toString('base64') + ' ' + random(termCount) + ' ' + random(termCount).toString()
+        paragraphs:paragraphs
     });
 });
 
