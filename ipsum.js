@@ -13,7 +13,7 @@ app.post('/', function (request, response) {
 	var paragraphs = ['', '', '', '', ''];
 	for (var i = 0; i < 5; i++) {
 		while (paragraphs[i].length < 500) {
-			paragraphs[i] += data.terms[Math.round(Math.Random(termCount))] + ' ';
+			paragraphs[i] += data.terms[Math.round(Math.random(termCount))] + ' ';
 		}
 	}
 
