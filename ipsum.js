@@ -17,7 +17,10 @@ app.post('/', function (request, response) {
 		}
 	}
 
-	response.render('index', {paragraphs:paragraphs});
+	response.render('index', {
+        paragraphs:paragraphs,
+        debug:random(termCount).toString('base64') + ' ' + random(termCount) + ' ' + random(termCount).toString()
+    });
 });
 
 var port = process.env.PORT || 3000;
