@@ -1,709 +1,1998 @@
 exports.terms = 
-['Anakin',
-'C-3P0',
-'Yoda',
-'Palpatine',
-'Yoda',
-'Obi-Wan',
-'Kenobi',
-'Skywalker',
-'Qui-Gonn',
-'Jinn',
-'Nute',
-'Gunray',
-'Padm√©',
-'Amidala',
-'Captian',
-'Admiral',
-'Moff',
-'Sio',
-'Bibble',
-'Panaka',
-'Jar',
-'Binks',
-'Boss',
-'Nassau',
-'Sab√©',
-'Darth',
-'Maul',
-'Vader',
-'Dooku',
-'Sidious',
-'Watto',
-'Shmi',
-'Sebulba',
-'Jabba',
-'Hutt',
-'Bib',
-'Fortunate',
-'Chancellor',
-'Valorum',
-'Mace',
-'Windu',
-'Ki-Adi-Mundi',
-'Typho',
-'Bail',
-'Organa',
-'Zam',
-'Wessell',
-'Jango',
-'Fett',
-'Boba',
-'Dexter',
-'Jettster',
-'Owen',
-'Lars',
-'Count',
-'General',
-'Grievous',
-'Chewbacca',
-'Luke',
-'Leia',
-'Wedge',
-'Biggs',
-'Lando',
-'Calrissian',
-'Antilles',
-'Ackbar',
-'Wicket',
-'Ablajeck',
-'Abregado',
-'Abrion',
-'Allied Tion',
-'Ansuroer',
-'Antemeridian',
-'Anthos',
-'Aparo',
-'Arkanis',
-'Atrivis',
-'Auril',
-'Altyr',
-'Bajic',
-'Bormea',
-'Bothan',
-'Bothawui',
-'Brak',
-'Braxant',
-'Cadavine',
-'Castell',
-'Cerea',
-'Chommell',
-'Corporate',
-'Corellia',
-'Coruscant',
-'Dalonbian',
-'Darpa',
-'Dagobah',
-'Dantooine',
-'Doldur',
-'Duro',
-'Dorvalla',
-'Elrood',
-'Falleen',
-'Farlax',
-'Gamorr',
-'Gordin Reach',
-'Gricho',
-'Halla',
-'Hapes',
-'Haruun Kal',
-'Hypori',
-'Illum',
-'Juvex',
-'Kalarba',
-'Kalee',
-'Kastolar',
-'Kathol',
-'Kessel',
-'Kuat',
-'Kor-uj',
-'Lahara',
-'Lytton',
-'Malastare',
-'Mandalore',
-'Mayagil',
-'Meridian',
-'Metalorn',
-'Moddell',
-'Mon Calamari',
-'Muunilinst',
-'Nal Hutta',
-'Nar Shadda',
-'Nilgaard',
-'Orus',
-'Periphery',
-'Quelli',
-'Quence',
-'Raioballo',
-'Rhen Var',
-'Rishi',
-'Senex',
-'Sern',
-'Sesswenna',
-'Sluis',
-'Spar',
-'Subterrel',
-'Sulorine',
-'Tatooine',
-'Tapani',
-'Tharin',
-'Thisspias',
-'Tion Cluster',
-'Tython',
-'Vivenda',
-'Wyl',
-'Xappyh',
-'Alderaan',
-'Ansion ',
-'Artaru',
-'Bespin ',
-'Boz Pity ',
-'Cato Neimoidia ',
-'Coruscant ',
-'Dagobah ',
-'Dantooine',
-'Endor ',
-'Felucia ',
-'Geonosis ',
-'Hoth ',
-'Iego ',
-'Kamino ',
-'Kashyyyk ',
-'Kessel ',
-'Malastare ',
-'Mustafar ',
-'Mygeeto ',
-'Naboo ',
-'Nar Shaddaa ',
-'Ord Mantell aka Ord Mandell ',
-'Polis Massa ',
-'Rattatak ',
-'Saleucami ',
-'Subterrel ',
-'Tatooine ',
-'Tund ',
-'Utapau ',
-'Yavin ',
-'Yavin IV ',
-'Abyssin',
-'Aleena',
-'Amanin',
-'Ansionian',
-'Anomid',
-'Annoo dat',
-'Anx',
-'Anzati',
-'Aqualish',
-'Aramandi',
-'Arcona',
-'Argazdan',
-'Arkanian',
-'Aruzan',
-'Askajian',
-'Assembler',
-'Balosar',
-'Bando Gora',
-'Barabel',
-'Besalisk',
-'Bimm',
-'Bith',
-'Blood Carver',
-'Boltrunians',
-'B\'omarr monks',
-'Bothan',
-'Bouncer',
-'Caamasi',
-'Cathar',
-'Carondian',
-'Celegian',
-'Cerean',
-'Chadra-Fan',
-'Chagrian',
-'Chazrach',
-'Chiss',
-'Chistori',
-'Clawdite',
-'Codru-Ji',
-'Coway',
-'Croke',
-'Dantari',
-'Dashade',
-'Defel',
-'Devaronian',
-'Drach\'nam',
-'Draethos',
-'Drall',
-'Dressellian',
-'Droch',
-'Drovian',
-'Dug',
-'Dulok',
-'Duros',
-'Echani',
-'Elom',
-'Elomin',
-'Epicanthix',
-'Er\'Kit',
-'Ewok',
-'Evocii',
-'Falleen',
-'Far-Outsiders',
-'Feeorin',
-'Ferroans',
-'Firrerreo',
-'Fosh',
-'Frozian',
-'Frozarns',
-'Gado',
-'Gamorrean',
-'Gand',
-'Gank',
-'Gen\'Dai',
-'Gerb',
-'Geonosian',
-'Givin',
-'Glymphid',
-'Gorax',
-'Gizka',
-'Gorith',
-'Gorog',
-'Gossam',
-'Gotal',
-'Gran',
-'Grizmallt',
-'Gungan',
-'Gwurran',
-'Habassa',
-'Hallotan',
-'Hapan',
-'Himoran',
-'H\'nemthean',
-'Hoojib',
-'Huk',
-'Human',
-'Hutt',
-'Hssis',
-'Iktotchi',
-'Iridonian',
-'Ishi Tib',
-'Ithorian',
-'Jawa',
-'Jin\'Ha',
-'Jabiimas',
-'Kaleesh',
-'Kaminoan',
-'Kel Dor',
-'Keshiri',
-'Kiffar',
-'Kitonak',
-'Klatooinian',
-'Kobok',
-'Kowakian Monkey-Lizard',
-'Kubaz',
-'Kurtzen',
-'Kushiban',
-'Kwa',
-'Kwi',
-'Lannik',
-'Latter',
-'Lepi',
-'Letaki',
-'Mandalorians',
-'Massassi',
-'Melodie',
-'Mimbanite',
-'Miraluka',
-'Mirialan',
-'Mon Calamari',
-'Mustafarian',
-'Muun',
-'Myneyrsh',
-'Nagai',
-'Nautolan',
-'Neimoidian',
-'Nelvaanian',
-'Neti',
-'Nikto',
-'Noghri',
-'Nosaurian',
-'Ogemite',
-'Omwati',
-'Ongree',
-'Ortolan',
-'Oswaft',
-'Pa\'lowick',
-'Paaerduag',
-'Pau\'an',
-'Phlog',
-'Polis Massans',
-'Priapulin',
-'Psadan',
-'P\'w\'eck',
-'Quarren',
-'Quermian',
-'Rakata',
-'Ranat',
-'Rishii',
-'Rodian',
-'Roonan',
-'Ruurian',
-'Ryn',
-'Rattataki',
-'Saffa',
-'Sanyassan',
-'Saurin',
-'Selkath',
-'Selonian',
-'Shawda Ubb',
-'Shi\'ido',
-'Shistavanen',
-'Sikan',
-'Sith',
-'Skakoan',
-'Sneevel',
-'Snivvian',
-'Squib',
-'Ssi-Ruuk',
-'Stereb',
-'Sullustan',
-'Talortai',
-'Tarasin',
-'Talz',
-'Taung',
-'Tchuukthai',
-'Teek',
-'Teevan',
-'Thakwaash',
-'Theelin',
-'Thennqora',
-'Terentatek',
-'Thisspiasian',
-'Thrella',
-'Timoliini',
-'t\'landa Til',
-'Tof',
-'Togorian',
-'Togruta',
-'Toydarian',
-'Trandoshan',
-'Trianii',
-'Troig',
-'Tusken Raider',
-'Twi\'lek',
-'Ubese',
-'Ugnaught',
-'Umbaran',
-'Unu',
-'Utai',
-'Utapaun',
-'Vaathkree',
-'Vagaari',
-'Veknoid',
-'Vella',
-'Verpine',
-'Vodran',
-'Vor',
-'Voxyn',
-'Vratix',
-'Vulptereen',
-'Vurk',
-'Wampa',
-'Weequay',
-'Whaladon',
-'Wharl',
-'Whill',
-'Whiphid',
-'Wirutid',
-'Wol Cabasshite',
-'Wookiee',
-'Woostoid',
-'Wroonian',
-'X\'ting',
-'Xexto',
-'Y\'bith',
-'Yaka',
-'Yevetha',
-'Yuuzhan Vong',
-'Yuvernian',
-'Yuzzem',
-'Yuzzum',
-'Zabrak',
-'Zeltron',
-'Zhell',
-'-1B ',
-'-LOM',
-'D8',
-'t88',
-'Admiral Ackbar ',
-'Stass Allie',
-'Padm√© Amidala',
-'Mas Amedda',
-'Bail Antilles',
-'Raymus Antilles ',
-'Wedge Antilles ',
-'Queen Breha Antilles Organa',
-'Tavion Axmis',
-'B4-D4 ',
-'Ponda Baba',
-'Cad Bane',
-'Darth Bane ',
-'Garm Bel Iblis',
-'Sio Bibble',
-'Depa Billaba ',
-'Jar Jar Binks',
-'Deliah Blue ',
-'Blue Max ',
-'Bossk ',
-'Bollux',
-'Borvo the Hutt',
-'Noa Briqualon',
-'Maris Brood',
-'C-3PO ',
-'CB-99',
-'Joruus C\'baoth ',
-'Darth Caedus ',
-'Lando Calrissian',
-'Charal ',
-'Chewbacca',
-'Chief Chirrpa ',
-'Nas Choka',
-'Captain Jeremoch Colton',
-'Commander Cody ',
-'Darth Cognus ',
-'Cord√© ',
-'General Airen Cracken ',
-'Arvel Crynyd',
-'Salacious B. Crumb ',
-'Captain Rex ',
-'Admiral Natasi Daala ',
-'Biggs Darklighter',
-'Dengar',
-'Bren Derlin',
-'Ima-Gun Di',
-'Desann ',
-'Grand Moff Vilim Disra',
-'Teneniel Djo',
-'Jan Dodonna ',
-'Count Dooku ',
-'Dorm√© ',
-'Grand Moff Dunhausen',
-'Captain Dunwell',
-'Durge',
-'Kyp Durron',
-'Darth Desolous',
-'Darth Vedder',
-'Captain Juno Eclipse',
-'K-3PO ',
-'Ebe Endocott ',
-'Emtrey ',
-'EV-9D9 ',
-'Doctor Cornelius Evazan ',
-'Keyan Farlander',
-'Jagged Fel',
-'Roan Fel',
-'Baron Soontir Fel',
-'Davin Felth',
-'Jango Fett ',
-'Boba Fett ',
-'Borsk Fey\'lya',
-'Kit Fisto ',
-'Fode ',
-'Bib Fortuna ',
-'Adi Gallia',
-'Garindan ',
-'Gonk Droid',
-'Mirta Gev',
-'Joelle Golda',
-'Greeata ',
-'Greedo ',
-'General Grievous',
-'Nute Gunray',
-'Rune Haako',
-'San Hill ',
-'Grand Moff Bertroff Hissa',
-'Corran Horn',
-'IG-88 ',
-'Ikrit',
-'Ysanne Isard',
-'Irek Ismaren',
-'Isolder',
-'Jabba the Hutt ',
-'Mara Jade Skywalker ',
-'Queen Jamillia ',
-'Jarael',
-'Carnor Jax',
-'Jerec ',
-'Moff Jerjerrod ',
-'Dexter Jettster ',
-'Qui-Gon Jinn ',
-'Jubnuk ',
-'Bardan Jusik ',
-'Tenel Ka',
-'Captain Kael ',
-'Kal Skirata',
-'Kir Kanos',
-'Talon Karrde',
-'Jodo Kast ',
-'Kyle Katarn ',
-'Obi-Wan Kenobi',
-'Vestara Khai ',
-'Ki-Adi-Mundi',
-'Klaatu',
-'Ken',
-'Derek "Hobbie" Klivian',
-'Plo Koon ',
-'General Rahm Kota ',
-'Warmaster Tsavong Lah',
-'Beru Lars ',
-'Cliegg Lars ',
-'Owen Lars ',
-'Lobot ',
-'Logray ',
-'Lowbacca ',
-'Lumiya ',
-'Galen Marek ',
-'Darth Maul',
-'Droopy McCool',
-'MD-5',
-'Lyn Me ',
-'Tion Medon ',
-'General Rom Mohc',
-'Kasan Moor ',
-'Sly Moore',
-'Mon Mothma',
-'Admiral Conan Antonio Motti ',
-'Grand Moff Muzzer ',
-'Jobal Naberrie',
-'Ruwee Naberrie ',
-'Sola Naberrie ',
-'Freedon Nadd ',
-'Momaw Nadon ',
-'Boss Rugor Nass ',
-'Captain Lorth Needa ',
-'Nien Nunb',
-'Barriss Offee ',
-'Ric Oli√© ',
-'Cal Omas',
-'Omega Squad',
-'Onimi ',
-'Oola ',
-'Savage Opress ',
-'Bail Organa ',
-'Princess Leia Organa ',
-'Orrin',
-'Jan Ors ',
-'Admiral Kendal Ozzel ',
-'Emperor Palpatine',
-'Captain Panaka ',
-'Paploo ',
-'Jax Pavan ',
-'Gilad Pellaeon',
-'Even Piell',
-'Firmus Piett ',
-'Darth Plagueis',
-'Poggle the Lesser',
-'Yarael Poof ',
-'Jek Tono Porkins ',
-'Ulic Qel-Droma',
-'Danni Quee',
-'Ben Quadrinaros',
-'Ooryl Qrygg',
-'R2-D2 ',
-'R4-P17 ',
-'R5-D4 ',
-'Qu Rahn ',
-'Dak Ralter',
-'Oppo Rancisis ',
-'Max Rebo ',
-'Dash Rendar ',
-'Ree-Yees ',
-'General Carlist Rieekan ',
-'Rogue Squadron ',
-'Rookie One ',
-'Rotta the Hutt',
-'Rukh ',
-'Sab√© ',
-'Sach√© ',
-'Admiral Sarn ',
-'Sebulba ',
-'Aayla Secura',
-'Moff Kohl Seerdon ',
-'Zev Senesca',
-'Shimrra ',
-'Darth Sidious ',
-'Sifo-Dyas ',
-'Aurra Sing ',
-'Ben Skywalker',
-'Cade Skywalker',
-'Luke Skywalker',
-'Luuke Skywalker',
-'Mara Jade Skywalker ',
-'Shmi Skywalker ',
-'Sy Snootles',
-'Anakin Solo ',
-'Allana Solo',
-'Han Solo',
-'Jacen Solo ',
-'Jaina Solo ',
-'Leia Organa Solo ',
-'Thrackan Sal-Solo',
-'Maarek Stele ',
-'Lama Su',
-'Nomi Sunrider',
-'Gavyn Sykes ',
-'General Cassio Tagge ',
-'Wat Tambor ',
-'Grand Moff Wilhuff Tarkin ',
-'Captain Roos Tarpals ',
-'TC-14 ',
-'Booster Terrik',
-'Mirax Terrik',
-'Mod Terrik',
-'Bria Tharen',
-'Grand Moff Thistleborn ',
-'Raynar Thul',
-'Grand Admiral Thrawn ',
-'Shaak Ti ',
-'Tibor',
-'Saesee Tiin ',
-'Major Grodin Tierce',
-'Triclops',
-'Trioculus ',
-'Darth Tyranus ',
-'Ahsoka Tano ',
-'Luminara Unduli',
-'Darth Vader ',
-'Supreme Chancellor Finis Valorum ',
-'Shado Vao ',
-'Nahdar Vebb ',
-'General Maximilian Veers ',
-'Tahiri Veila',
-'Ailyn Vel',
-'Asajj Ventress ',
-'Vima-Da-Boda ',
-'Quinlan Vos',
-'Vuffi Raa',
-'Wicket W. Warrick ',
-'Walon Vau ',
-'Watto ',
-'Taun We',
-'Zam Wesell ',
-'Beru Whitesun ',
-'Mace Windu ',
-'Winter ',
-'Wuher',
-'X1',
-'X2',
-'Xanatos ',
-'Prince Xizor ',
-'Yaddle ',
-'Yan√© ',
-'Yoda ',
-'Joh Yowza ',
-'Tyber Zann ',
-'Zekk ',
-'Ziro the Hutt ',
-'Zorba the Hutt',
-'Zuckuss ',
-'Commodore Zuggs',
-'Darth Zannah'];
+['anakin',
+    
+    'c-3p0',
+    
+    'yoda',
+    
+    'palpatine',
+    
+    'yoda',
+    
+    'obi-wan',
+    
+    'kenobi',
+    
+    'skywalker',
+    
+    'qui-gonn',
+    
+    'jinn',
+    
+    'nute',
+    
+    'gunray',
+    
+    'padmŒ·ŒÈŒ›',
+    
+    'amidala',
+    
+    'captian',
+    
+    'admiral',
+    
+    'moff',
+    
+    'sio',
+    
+    'bibble',
+    
+    'panaka',
+    
+    'jar',
+    
+    'binks',
+    
+    'boss',
+    
+    'nassau',
+    
+    'sabŒ·ŒÈŒ›',
+    
+    'darth',
+    
+    'maul',
+    
+    'vader',
+    
+    'dooku',
+    
+    'sidious',
+    
+    'watto',
+    
+    'shmi',
+    
+    'sebulba',
+    
+    'jabba',
+    
+    'hutt',
+    
+    'bib',
+    
+    'fortunate',
+    
+    'chancellor',
+    
+    'valorum',
+    
+    'mace',
+    
+    'windu',
+    
+    'ki-adi-mundi',
+    
+    'typho',
+    
+    'bail',
+    
+    'organa',
+    
+    'zam',
+    
+    'wessell',
+    
+    'jango',
+    
+    'fett',
+    
+    'boba',
+    
+    'dexter',
+    
+    'jettster',
+    
+    'owen',
+    
+    'lars',
+    
+    'count',
+    
+    'general',
+    
+    'grievous',
+    
+    'chewbacca',
+    
+    'luke',
+    
+    'leia',
+    
+    'wedge',
+    
+    'biggs',
+    
+    'lando',
+    
+    'calrissian',
+    
+    'antilles',
+    
+    'ackbar',
+    
+    'wicket',
+    
+    'ablajeck',
+    
+    'abregado',
+    
+    'abrion',
+    
+    'allied',
+    
+    'tion',
+    
+    'ansuroer',
+    
+    'antemeridian',
+    
+    'anthos',
+    
+    'aparo',
+    
+    'arkanis',
+    
+    'atrivis',
+    
+    'auril',
+    
+    'altyr',
+    
+    'bajic',
+    
+    'bormea',
+    
+    'bothan',
+    
+    'bothawui',
+    
+    'brak',
+    
+    'braxant',
+    
+    'cadavine',
+    
+    'castell',
+    
+    'cerea',
+    
+    'chommell',
+    
+    'corporate',
+    
+    'corellia',
+    
+    'coruscant',
+    
+    'dalonbian',
+    
+    'darpa',
+    
+    'dagobah',
+    
+    'dantooine',
+    
+    'doldur',
+    
+    'duro',
+    
+    'dorvalla',
+    
+    'elrood',
+    
+    'falleen',
+    
+    'farlax',
+    
+    'gamorr',
+    
+    'gordin',
+    
+    'reach',
+    
+    'gricho',
+    
+    'halla',
+    
+    'hapes',
+    
+    'haruun',
+    
+    'kal',
+    
+    'hypori',
+    
+    'illum',
+    
+    'juvex',
+    
+    'kalarba',
+    
+    'kalee',
+    
+    'kastolar',
+    
+    'kathol',
+    
+    'kessel',
+    
+    'kuat',
+    
+    'kor-uj',
+    
+    'lahara',
+    
+    'lytton',
+    
+    'malastare',
+    
+    'mandalore',
+    
+    'mayagil',
+    
+    'meridian',
+    
+    'metalorn',
+    
+    'moddell',
+    
+    'mon',
+    
+    'calamari',
+    
+    'muunilinst',
+    
+    'nal',
+    
+    'hutta',
+    
+    'nar',
+    
+    'shadda',
+    
+    'nilgaard',
+    
+    'orus',
+    
+    'periphery',
+    
+    'quelli',
+    
+    'quence',
+    
+    'raioballo',
+    
+    'rhen',
+    
+    'var',
+    
+    'rishi',
+    
+    'senex',
+    
+    'sern',
+    
+    'sesswenna',
+    
+    'sluis',
+    
+    'spar',
+    
+    'subterrel',
+    
+    'sulorine',
+    
+    'tatooine',
+    
+    'tapani',
+    
+    'tharin',
+    
+    'thisspias',
+    
+    'tion',
+    
+    'cluster',
+    
+    'tython',
+    
+    'vivenda',
+    
+    'wyl',
+    
+    'xappyh',
+    
+    'alderaan',
+    
+    'ansion',
+    
+    'artaru',
+    
+    'bespin',
+    
+    'boz',
+    
+    'pity',
+    
+    'cato',
+    
+    'neimoidia',
+    
+    'coruscant',
+    
+    'dagobah',
+    
+    'dantooine',
+    
+    'endor',
+    
+    'felucia',
+    
+    'geonosis',
+    
+    'hoth',
+    
+    'iego',
+    
+    'kamino',
+    
+    'kashyyyk',
+    
+    'kessel',
+    
+    'malastare',
+    
+    'mustafar',
+    
+    'mygeeto',
+    
+    'naboo',
+    
+    'nar',
+    
+    'shaddaa',
+    
+    'ord',
+    
+    'mantell',
+    
+    'aka',
+    
+    'ord',
+    
+    'mandell',
+    
+    'polis',
+    
+    'massa',
+    
+    'rattatak',
+    
+    'saleucami',
+    
+    'subterrel',
+    
+    'tatooine',
+    
+    'tund',
+    
+    'utapau',
+    
+    'yavin',
+    
+    'yavin',
+    
+    'iv',
+    
+    'abyssin',
+    
+    'aleena',
+    
+    'amanin',
+    
+    'ansionian',
+    
+    'anomid',
+    
+    'annoo',
+    
+    'dat',
+    
+    'anx',
+    
+    'anzati',
+    
+    'aqualish',
+    
+    'aramandi',
+    
+    'arcona',
+    
+    'argazdan',
+    
+    'arkanian',
+    
+    'aruzan',
+    
+    'askajian',
+    
+    'assembler',
+    
+    'balosar',
+    
+    'bando',
+    
+    'gora',
+    
+    'barabel',
+    
+    'besalisk',
+    
+    'bimm',
+    
+    'bith',
+    
+    'blood',
+    
+    'carver',
+    
+    'boltrunians',
+    
+    'b\'omarr',
+    
+    'monks',
+    
+    'bothan',
+    
+    'bouncer',
+    
+    'caamasi',
+    
+    'cathar',
+    
+    'carondian',
+    
+    'celegian',
+    
+    'cerean',
+    
+    'chadra-fan',
+    
+    'chagrian',
+    
+    'chazrach',
+    
+    'chiss',
+    
+    'chistori',
+    
+    'clawdite',
+    
+    'codru-ji',
+    
+    'coway',
+    
+    'croke',
+    
+    'dantari',
+    
+    'dashade',
+    
+    'defel',
+    
+    'devaronian',
+    
+    'drach\'nam',
+    
+    'draethos',
+    
+    'drall',
+    
+    'dressellian',
+    
+    'droch',
+    
+    'drovian',
+    
+    'dug',
+    
+    'dulok',
+    
+    'duros',
+    
+    'echani',
+    
+    'elom',
+    
+    'elomin',
+    
+    'epicanthix',
+    
+    'er\'kit',
+    
+    'ewok',
+    
+    'evocii',
+    
+    'falleen',
+    
+    'far-outsiders',
+    
+    'feeorin',
+    
+    'ferroans',
+    
+    'firrerreo',
+    
+    'fosh',
+    
+    'frozian',
+    
+    'frozarns',
+    
+    'gado',
+    
+    'gamorrean',
+    
+    'gand',
+    
+    'gank',
+    
+    'gen\'dai',
+    
+    'gerb',
+    
+    'geonosian',
+    
+    'givin',
+    
+    'glymphid',
+    
+    'gorax',
+    
+    'gizka',
+    
+    'gorith',
+    
+    'gorog',
+    
+    'gossam',
+    
+    'gotal',
+    
+    'gran',
+    
+    'grizmallt',
+    
+    'gungan',
+    
+    'gwurran',
+    
+    'habassa',
+    
+    'hallotan',
+    
+    'hapan',
+    
+    'himoran',
+    
+    'h\'nemthean',
+    
+    'hoojib',
+    
+    'huk',
+    
+    'human',
+    
+    'hutt',
+    
+    'hssis',
+    
+    'iktotchi',
+    
+    'iridonian',
+    
+    'ishi',
+    
+    'tib',
+    
+    'ithorian',
+    
+    'jawa',
+    
+    'jin\'ha',
+    
+    'jabiimas',
+    
+    'kaleesh',
+    
+    'kaminoan',
+    
+    'kel',
+    
+    'dor',
+    
+    'keshiri',
+    
+    'kiffar',
+    
+    'kitonak',
+    
+    'klatooinian',
+    
+    'kobok',
+    
+    'kowakian',
+    
+    'monkey-lizard',
+    
+    'kubaz',
+    
+    'kurtzen',
+    
+    'kushiban',
+    
+    'kwa',
+    
+    'kwi',
+    
+    'lannik',
+    
+    'latter',
+    
+    'lepi',
+    
+    'letaki',
+    
+    'mandalorians',
+    
+    'massassi',
+    
+    'melodie',
+    
+    'mimbanite',
+    
+    'miraluka',
+    
+    'mirialan',
+    
+    'mon',
+    
+    'calamari',
+    
+    'mustafarian',
+    
+    'muun',
+    
+    'myneyrsh',
+    
+    'nagai',
+    
+    'nautolan',
+    
+    'neimoidian',
+    
+    'nelvaanian',
+    
+    'neti',
+    
+    'nikto',
+    
+    'noghri',
+    
+    'nosaurian',
+    
+    'ogemite',
+    
+    'omwati',
+    
+    'ongree',
+    
+    'ortolan',
+    
+    'oswaft',
+    
+    'pa\'lowick',
+    
+    'paaerduag',
+    
+    'pau\'an',
+    
+    'phlog',
+    
+    'polis',
+    
+    'massans',
+    
+    'priapulin',
+    
+    'psadan',
+    
+    'p\'w'eck',
+    
+    'quarren',
+    
+    'quermian',
+    
+    'rakata',
+    
+    'ranat',
+    
+    'rishii',
+    
+    'rodian',
+    
+    'roonan',
+    
+    'ruurian',
+    
+    'ryn',
+    
+    'rattataki',
+    
+    'saffa',
+    
+    'sanyassan',
+    
+    'saurin',
+    
+    'selkath',
+    
+    'selonian',
+    
+    'shawda',
+    
+    'ubb',
+    
+    'shi\'ido',
+    
+    'shistavanen',
+    
+    'sikan',
+    
+    'sith',
+    
+    'skakoan',
+    
+    'sneevel',
+    
+    'snivvian',
+    
+    'squib',
+    
+    'ssi-ruuk',
+    
+    'stereb',
+    
+    'sullustan',
+    
+    'talortai',
+    
+    'tarasin',
+    
+    'talz',
+    
+    'taung',
+    
+    'tchuukthai',
+    
+    'teek',
+    
+    'teevan',
+    
+    'thakwaash',
+    
+    'theelin',
+    
+    'thennqora',
+    
+    'terentatek',
+    
+    'thisspiasian',
+    
+    'thrella',
+    
+    'timoliini',
+    
+    't\'landa',
+    
+    'til',
+    
+    'tof',
+    
+    'togorian',
+    
+    'togruta',
+    
+    'toydarian',
+    
+    'trandoshan',
+    
+    'trianii',
+    
+    'troig',
+    
+    'tusken',
+    
+    'raider',
+    
+    'twi\'lek',
+    
+    'ubese',
+    
+    'ugnaught',
+    
+    'umbaran',
+    
+    'unu',
+    
+    'utai',
+    
+    'utapaun',
+    
+    'vaathkree',
+    
+    'vagaari',
+    
+    'veknoid',
+    
+    'vella',
+    
+    'verpine',
+    
+    'vodran',
+    
+    'vor',
+    
+    'voxyn',
+    
+    'vratix',
+    
+    'vulptereen',
+    
+    'vurk',
+    
+    'wampa',
+    
+    'weequay',
+    
+    'whaladon',
+    
+    'wharl',
+    
+    'whill',
+    
+    'whiphid',
+    
+    'wirutid',
+    
+    'wol',
+    
+    'cabasshite',
+    
+    'wookiee',
+    
+    'woostoid',
+    
+    'wroonian',
+    
+    'x\'ting',
+    
+    'xexto',
+    
+    'y\'bith',
+    
+    'yaka',
+    
+    'yevetha',
+    
+    'yuuzhan',
+    
+    'vong',
+    
+    'yuvernian',
+    
+    'yuzzem',
+    
+    'yuzzum',
+    
+    'zabrak',
+    
+    'zeltron',
+    
+    'zhell',
+    
+    '-1b',
+    
+    '-lom',
+    
+    'd8',
+    
+    't88',
+    
+    'admiral',
+    
+    'ackbar',
+    
+    'stass',
+    
+    'allie',
+    
+    'padmŒ·ŒÈŒ›',
+    
+    'amidala',
+    
+    'mas',
+    
+    'amedda',
+    
+    'bail',
+    
+    'antilles',
+    
+    'raymus',
+    
+    'antilles',
+    
+    'wedge',
+    
+    'antilles',
+    
+    'queen',
+    
+    'breha',
+    
+    'antilles',
+    
+    'organa',
+    
+    'tavion',
+    
+    'axmis',
+    
+    'b4-d4',
+    
+    'ponda',
+    
+    'baba',
+    
+    'cad',
+    
+    'bane',
+    
+    'darth',
+    
+    'bane',
+    
+    'garm',
+    
+    'bel',
+    
+    'iblis',
+    
+    'sio',
+    
+    'bibble',
+    
+    'depa',
+    
+    'billaba',
+    
+    'jar',
+    
+    'jar',
+    
+    'binks',
+    
+    'deliah',
+    
+    'blue',
+    
+    'blue',
+    
+    'max',
+    
+    'bossk',
+    
+    'bollux',
+    
+    'borvo',
+    
+    'the',
+    
+    'hutt',
+    
+    'noa',
+    
+    'briqualon',
+    
+    'maris',
+    
+    'brood',
+    
+    'c-3po',
+    
+    'cb-99',
+    
+    'joruus',
+    
+    'c\'baoth',
+    
+    'darth',
+    
+    'caedus',
+    
+    'lando',
+    
+    'calrissian',
+    
+    'charal',
+    
+    'chewbacca',
+    
+    'chief',
+    
+    'chirrpa',
+    
+    'nas',
+    
+    'choka',
+    
+    'captain',
+    
+    'jeremoch',
+    
+    'colton',
+    
+    'commander',
+    
+    'cody',
+    
+    'darth',
+    
+    'cognus',
+    
+    'cordŒ·ŒÈŒ›',
+    
+    'general',
+    
+    'airen',
+    
+    'cracken',
+    
+    'arvel',
+    
+    'crynyd',
+    
+    'salacious',
+    
+    'b.',
+    
+    'crumb',
+    
+    'captain',
+    
+    'rex',
+    
+    'admiral',
+    
+    'natasi',
+    
+    'daala',
+    
+    'biggs',
+    
+    'darklighter',
+    
+    'dengar',
+    
+    'bren',
+    
+    'derlin',
+    
+    'ima-gun',
+    
+    'di',
+    
+    'desann',
+    
+    'grand',
+    
+    'moff',
+    
+    'vilim',
+    
+    'disra',
+    
+    'teneniel',
+    
+    'djo',
+    
+    'jan',
+    
+    'dodonna',
+    
+    'count',
+    
+    'dooku',
+    
+    'dormŒ·ŒÈŒ›',
+    
+    'grand',
+    
+    'moff',
+    
+    'dunhausen',
+    
+    'captain',
+    
+    'dunwell',
+    
+    'durge',
+    
+    'kyp',
+    
+    'durron',
+    
+    'darth',
+    
+    'desolous',
+    
+    'darth',
+    
+    'vedder',
+    
+    'captain',
+    
+    'juno',
+    
+    'eclipse',
+    
+    'k-3po',
+    
+    'ebe',
+    
+    'endocott',
+    
+    'emtrey',
+    
+    'ev-9d9',
+    
+    'doctor',
+    
+    'cornelius',
+    
+    'evazan',
+    
+    'keyan',
+    
+    'farlander',
+    
+    'jagged',
+    
+    'fel',
+    
+    'roan',
+    
+    'fel',
+    
+    'baron',
+    
+    'soontir',
+    
+    'fel',
+    
+    'davin',
+    
+    'felth',
+    
+    'jango',
+    
+    'fett',
+    
+    'boba',
+    
+    'fett',
+    
+    'borsk',
+    
+    'fey\'lya',
+    
+    'kit',
+    
+    'fisto',
+    
+    'fode',
+    
+    'bib',
+    
+    'fortuna',
+    
+    'adi',
+    
+    'gallia',
+    
+    'garindan',
+    
+    'gonk',
+    
+    'droid',
+    
+    'mirta',
+    
+    'gev',
+    
+    'joelle',
+    
+    'golda',
+    
+    'greeata',
+    
+    'greedo',
+    
+    'general',
+    
+    'grievous',
+    
+    'nute',
+    
+    'gunray',
+    
+    'rune',
+    
+    'haako',
+    
+    'san',
+    
+    'hill',
+    
+    'grand',
+    
+    'moff',
+    
+    'bertroff',
+    
+    'hissa',
+    
+    'corran',
+    
+    'horn',
+    
+    'ig-88',
+    
+    'ikrit',
+    
+    'ysanne',
+    
+    'isard',
+    
+    'irek',
+    
+    'ismaren',
+    
+    'isolder',
+    
+    'jabba',
+    
+    'the',
+    
+    'hutt',
+    
+    'mara',
+    
+    'jade',
+    
+    'skywalker',
+    
+    'queen',
+    
+    'jamillia',
+    
+    'jarael',
+    
+    'carnor',
+    
+    'jax',
+    
+    'jerec',
+    
+    'moff',
+    
+    'jerjerrod',
+    
+    'dexter',
+    
+    'jettster',
+    
+    'qui-gon',
+    
+    'jinn',
+    
+    'jubnuk',
+    
+    'bardan',
+    
+    'jusik',
+    
+    'tenel',
+    
+    'ka',
+    
+    'captain',
+    
+    'kael',
+    
+    'kal',
+    
+    'skirata',
+    
+    'kir',
+    
+    'kanos',
+    
+    'talon',
+    
+    'karrde',
+    
+    'jodo',
+    
+    'kast',
+    
+    'kyle',
+    
+    'katarn',
+    
+    'obi-wan',
+    
+    'kenobi',
+    
+    'vestara',
+    
+    'khai',
+    
+    'ki-adi-mundi',
+    
+    'klaatu',
+    
+    'ken',
+    
+    'derek',
+    
+    '"hobbie"',
+    
+    'klivian',
+    
+    'plo',
+    
+    'koon',
+    
+    'general',
+    
+    'rahm',
+    
+    'kota',
+    
+    'warmaster',
+    
+    'tsavong',
+    
+    'lah',
+    
+    'beru',
+    
+    'lars',
+    
+    'cliegg',
+    
+    'lars',
+    
+    'owen',
+    
+    'lars',
+    
+    'lobot',
+    
+    'logray',
+    
+    'lowbacca',
+    
+    'lumiya',
+    
+    'galen',
+    
+    'marek',
+    
+    'darth',
+    
+    'maul',
+    
+    'droopy',
+    
+    'mccool',
+    
+    'md-5',
+    
+    'lyn',
+    
+    'me',
+    
+    'tion',
+    
+    'medon',
+    
+    'general',
+    
+    'rom',
+    
+    'mohc',
+    
+    'kasan',
+    
+    'moor',
+    
+    'sly',
+    
+    'moore',
+    
+    'mon',
+    
+    'mothma',
+    
+    'admiral',
+    
+    'conan',
+    
+    'antonio',
+    
+    'motti',
+    
+    'grand',
+    
+    'moff',
+    
+    'muzzer',
+    
+    'jobal',
+    
+    'naberrie',
+    
+    'ruwee',
+    
+    'naberrie',
+    
+    'sola',
+    
+    'naberrie',
+    
+    'freedon',
+    
+    'nadd',
+    
+    'momaw',
+    
+    'nadon',
+    
+    'boss',
+    
+    'rugor',
+    
+    'nass',
+    
+    'captain',
+    
+    'lorth',
+    
+    'needa',
+    
+    'nien',
+    
+    'nunb',
+    
+    'barriss',
+    
+    'offee',
+    
+    'ric',
+    
+    'oliŒ·ŒÈŒ›',
+    
+    'cal',
+    
+    'omas',
+    
+    'omega',
+    
+    'squad',
+    
+    'onimi',
+    
+    'oola',
+    
+    'savage',
+    
+    'opress',
+    
+    'bail',
+    
+    'organa',
+    
+    'princess',
+    
+    'leia',
+    
+    'organa',
+    
+    'orrin',
+    
+    'jan',
+    
+    'ors',
+    
+    'admiral',
+    
+    'kendal',
+    
+    'ozzel',
+    
+    'emperor',
+    
+    'palpatine',
+    
+    'captain',
+    
+    'panaka',
+    
+    'paploo',
+    
+    'jax',
+    
+    'pavan',
+    
+    'gilad',
+    
+    'pellaeon',
+    
+    'even',
+    
+    'piell',
+    
+    'firmus',
+    
+    'piett',
+    
+    'darth',
+    
+    'plagueis',
+    
+    'poggle',
+    
+    'the',
+    
+    'lesser',
+    
+    'yarael',
+    
+    'poof',
+    
+    'jek',
+    
+    'tono',
+    
+    'porkins',
+    
+    'ulic',
+    
+    'qel-droma',
+    
+    'danni',
+    
+    'quee',
+    
+    'ben',
+    
+    'quadrinaros',
+    
+    'ooryl',
+    
+    'qrygg',
+    
+    'r2-d2',
+    
+    'r4-p17',
+    
+    'r5-d4',
+    
+    'qu',
+    
+    'rahn',
+    
+    'dak',
+    
+    'ralter',
+    
+    'oppo',
+    
+    'rancisis',
+    
+    'max',
+    
+    'rebo',
+    
+    'dash',
+    
+    'rendar',
+    
+    'ree-yees',
+    
+    'general',
+    
+    'carlist',
+    
+    'rieekan',
+    
+    'rogue',
+    
+    'squadron',
+    
+    'rookie',
+    
+    'one',
+    
+    'rotta',
+    
+    'the',
+    
+    'hutt',
+    
+    'rukh',
+    
+    'sabŒ·ŒÈŒ›',
+    
+    'sachŒ·ŒÈŒ›',
+    
+    'admiral',
+    
+    'sarn',
+    
+    'sebulba',
+    
+    'aayla',
+    
+    'secura',
+    
+    'moff',
+    
+    'kohl',
+    
+    'seerdon',
+    
+    'zev',
+    
+    'senesca',
+    
+    'shimrra',
+    
+    'darth',
+    
+    'sidious',
+    
+    'sifo-dyas',
+    
+    'aurra',
+    
+    'sing',
+    
+    'ben',
+    
+    'skywalker',
+    
+    'cade',
+    
+    'skywalker',
+    
+    'luke',
+    
+    'skywalker',
+    
+    'luuke',
+    
+    'skywalker',
+    
+    'mara',
+    
+    'jade',
+    
+    'skywalker',
+    
+    'shmi',
+    
+    'skywalker',
+    
+    'sy',
+    
+    'snootles',
+    
+    'anakin',
+    
+    'solo',
+    
+    'allana',
+    
+    'solo',
+    
+    'han',
+    
+    'solo',
+    
+    'jacen',
+    
+    'solo',
+    
+    'jaina',
+    
+    'solo',
+    
+    'leia',
+    
+    'organa',
+    
+    'solo',
+    
+    'thrackan',
+    
+    'sal-solo',
+    
+    'maarek',
+    
+    'stele',
+    
+    'lama',
+    
+    'su',
+    
+    'nomi',
+    
+    'sunrider',
+    
+    'gavyn',
+    
+    'sykes',
+    
+    'general',
+    
+    'cassio',
+    
+    'tagge',
+    
+    'wat',
+    
+    'tambor',
+    
+    'grand',
+    
+    'moff',
+    
+    'wilhuff',
+    
+    'tarkin',
+    
+    'captain',
+    
+    'roos',
+    
+    'tarpals',
+    
+    'tc-14',
+    
+    'booster',
+    
+    'terrik',
+    
+    'mirax',
+    
+    'terrik',
+    
+    'mod',
+    
+    'terrik',
+    
+    'bria',
+    
+    'tharen',
+    
+    'grand',
+    
+    'moff',
+    
+    'thistleborn',
+    
+    'raynar',
+    
+    'thul',
+    
+    'grand',
+    
+    'admiral',
+    
+    'thrawn',
+    
+    'shaak',
+    
+    'ti',
+    
+    'tibor',
+    
+    'saesee',
+    
+    'tiin',
+    
+    'major',
+    
+    'grodin',
+    
+    'tierce',
+    
+    'triclops',
+    
+    'trioculus',
+    
+    'darth',
+    
+    'tyranus',
+    
+    'ahsoka',
+    
+    'tano',
+    
+    'luminara',
+    
+    'unduli',
+    
+    'darth',
+    
+    'vader',
+    
+    'supreme',
+    
+    'chancellor',
+    
+    'finis',
+    
+    'valorum',
+    
+    'shado',
+    
+    'vao',
+    
+    'nahdar',
+    
+    'vebb',
+    
+    'general',
+    
+    'maximilian',
+    
+    'veers',
+    
+    'tahiri',
+    
+    'veila',
+    
+    'ailyn',
+    
+    'vel',
+    
+    'asajj',
+    
+    'ventress',
+    
+    'vima-da-boda',
+    
+    'quinlan',
+    
+    'vos',
+    
+    'vuffi',
+    
+    'raa',
+    
+    'wicket',
+    
+    'w.',
+    
+    'warrick',
+    
+    'walon',
+    
+    'vau',
+    
+    'watto',
+    
+    'taun',
+    
+    'we',
+    
+    'zam',
+    
+    'wesell',
+    
+    'beru',
+    
+    'whitesun',
+    
+    'mace',
+    
+    'windu',
+    
+    'winter',
+    
+    'wuher',
+    
+    'x1',
+    
+    'x2',
+    
+    'xanatos',
+    
+    'prince',
+    
+    'xizor',
+    
+    'yaddle',
+    
+    'yanŒ·ŒÈŒ›',
+    
+    'yoda',
+    
+    'joh',
+    
+    'yowza',
+    
+    'tyber',
+    
+    'zann',
+    
+    'zekk',
+    
+    'ziro',
+    
+    'the',
+    
+    'hutt',
+    
+    'zorba',
+    
+    'the',
+    
+    'hutt',
+    
+    'zuckuss',
+    
+    'commodore',
+    
+    'zuggs',
+    
+    'darth',
+    
+    'zannah'];
