@@ -10,11 +10,28 @@ app.get('/', function (request, response) {
 	response.render('index', {paragraphs:[]});
 });
 app.post('/', function (request, response) {
-	var paragraphs = ['', '', '', '', ''];
-	for (var i = 0; i < 5; i++) {
-		while (paragraphs[i].length < 500) {
-			paragraphs[i] += data.terms[Math.round(Math.random()*termCount)] + ' ';
+	var paragraphCount = 5,
+	    paragraphLength = 500,
+	    paragraphs = [],
+	    i, j,
+	    paragraph,
+	    sentenceLength,
+	    term;
+	for (i = 0; i < paragraphCount; i++) {
+		paragraph = '';
+		while (paragraph.length < paragraphLength) {
+			sentenceLength = random.getRandomInteger(4, 10);
+			for (j = 0; j < sentenceLength; j++) { 
+				term = data.terms[random.getRandomInteger(0, termCount)];
+				if (j === 0) {
+					term = term[0].toUpperCase() + term.slice(1);
+				}
+
+				paragraph += term + (j === sentenceLength - 1 ? '. ' : ' ');
+			}
 		}
+
+		paragraphs.push(paragraph);
 	}
 
 	response.render('index', {
