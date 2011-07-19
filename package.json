@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"dependencies": {
 		"express": "2.x",
-		"jade": "0.12.x"
+		"jade": "0.12.x",
+        "less": "1.1.x"
 	},
 	"engines": { "node": "0.4.x"  }
 }

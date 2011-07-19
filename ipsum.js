@@ -1,12 +1,21 @@
-var express = require('express');
-var data = require('./data.js');
-var random = require('./random.js');
-var termCount = data.terms.length;
+var express = require('express'),
+    less = require('less'),
+    data = require('./data.js'),
+    random = require('./random.js'),
+    pub_dir = __dirname + '/public',
+    termCount = data.terms.length,
+    app = express.createServer(express.logger());
+app.configure(function () {
+    app.set('views', __dirname + '/views');
+    app.set('view engine', 'jade');
+    app.use(express.bodyDecoder());
+    app.use(express.methodOverride());
+    app.use(express.compiler({ src: pub_dir, enable: ['less'] }));
+    app.use(app.router);
+    app.use(express.staticProvider(pub_dir));
+});
 
-var app = express.createServer(express.logger());
-app.set('view engine', 'jade');
-
-app.get('/dislaimer', function (request, response) {
+app.get('/disclaimer', function (request, response) {
 	response.render('disclaimer');
 });
 app.get('/', function (request, response) {
