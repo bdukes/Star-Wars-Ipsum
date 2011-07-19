@@ -6,11 +6,11 @@ var termCount = data.terms.length;
 var app = express.createServer(express.logger());
 app.set('view engine', 'jade');
 
-app.get('/', function (request, response) {
-	response.render('index', {paragraphs:[]});
-});
 app.get('/dislaimer', function (request, response) {
 	response.render('disclaimer');
+});
+app.get('/', function (request, response) {
+	response.render('index', {paragraphs:[]});
 });
 app.post('/', function (request, response) {
 	var paragraphCount = 5,
