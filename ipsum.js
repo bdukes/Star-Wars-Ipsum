@@ -6,11 +6,20 @@ var express = require('express'),
     termCount = data.terms.length,
     app = express.createServer(express.logger());
 app.configure(function () {
-    app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
+    app.use(express.compiler({ src: pub_dir, enable: ['less'] }));
+});
+app.configure('development' function () {
+    app.use(express.static(pub_dir));
+    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+});
+app.configure('production', function () {
+    var oneYear = 31557600000;
+    app.use(express.static(pub_dir, { maxAge: oneYear }));
+    app.use(express.errorHandler());
 });
 
 app.get('/disclaimer', function (request, response) {
