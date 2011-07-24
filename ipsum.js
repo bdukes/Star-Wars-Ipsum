@@ -12,7 +12,7 @@ app.configure(function () {
     app.use(app.router);
     app.use(express.compiler({ src: pub_dir, enable: ['less'] }));
 });
-app.configure('development' function () {
+app.configure('development', function () {
     app.use(express.static(pub_dir));
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
