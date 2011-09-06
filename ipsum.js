@@ -35,7 +35,7 @@ app.get('/', function (request, response) {
 	response.render('index', {paragraphs:[]});
 });
 app.post('/', function (request, response) {
-	var paragraphCount = 5,
+	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || 5,
 	    paragraphLength = 500,
 	    paragraphs = [],
 	    i, j,

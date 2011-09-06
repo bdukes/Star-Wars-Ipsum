@@ -1,6 +1,9 @@
 form(action="/",method="post")
-	input(type="submit", value="Generate")
+    label.paragraph-count
+        input(type="text", name="paragraph-count", value="5")
+        | Number of Paragraphs
+    input(type="submit", value="Generate")
 - if (paragraphs.length)
-	- paragraphs.forEach(function (paragraph) {
-		p= paragraph
-	- })
+    - paragraphs.forEach(function (paragraph) {
+        p= paragraph
+    - })
