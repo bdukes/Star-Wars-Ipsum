@@ -10,6 +10,7 @@ app.configure(function () {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
+    app.use(express.compiler({ src: pub_dir, enable: ['less']}));
 });
 app.configure('development', function () {
     app.use(express.static(pub_dir));
@@ -20,12 +21,13 @@ app.configure('production', function () {
     app.use(express.static(pub_dir, { maxAge: oneYear }));
     app.use(express.errorHandler());
 });
-
+/*
 app.get('/*.css', function (request, response) {
     less.render('body { background-color: #fff;}', function (error, tree) {
         tree.toCSS({ compress: true });
     });           
 });
+*/
 app.get('/disclaimer', function (request, response) {
 	response.render('disclaimer');
 });
