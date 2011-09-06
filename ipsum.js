@@ -32,10 +32,11 @@ app.get('/disclaimer', function (request, response) {
 	response.render('disclaimer');
 });
 app.get('/', function (request, response) {
-	response.render('index', {paragraphs:[]});
+	response.render('index', {paragraphs:[], paragraphCount:5, startWith:true});
 });
 app.post('/', function (request, response) {
 	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || 5,
+        startWith = request.body['start-with'],
 	    paragraphLength = 500,
 	    paragraphs = [],
 	    i, j,
@@ -43,24 +44,28 @@ app.post('/', function (request, response) {
 	    sentenceLength,
 	    term;
 	for (i = 0; i < paragraphCount; i++) {
-		paragraph = '';
+		paragraph = startWith ? 'Lucas ipsum dolor sit amet ' : '';
 		while (paragraph.length < paragraphLength) {
-			sentenceLength = random.getRandomInteger(4, 10);
+			sentenceLength = startWith ? 10 : random.getRandomInteger(4, 10);
 			for (j = 0; j < sentenceLength; j++) { 
 				term = data.terms[random.getRandomInteger(0, termCount)];
-				if (j === 0) {
+				if (j === 0 && !startWith) {
 					term = term[0].toUpperCase() + term.slice(1);
 				}
 
 				paragraph += term + (j === sentenceLength - 1 ? '. ' : ' ');
 			}
+
+            startWith = false;
 		}
 
 		paragraphs.push(paragraph);
 	}
 
 	response.render('index', {
-        paragraphs:paragraphs
+        paragraphs:paragraphs,
+        paragraphCount: paragraphCount,
+        startWith: request.body['start-with']
     });
 });
 
