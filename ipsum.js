@@ -1,5 +1,4 @@
 var express = require('express'),
-    less = require('less'),
     data = require('./data.js'),
     random = require('./random.js'),
     pub_dir = __dirname + '/public',
@@ -21,18 +20,17 @@ app.configure('production', function () {
     app.use(express.static(pub_dir, { maxAge: oneYear }));
     app.use(express.errorHandler());
 });
-/*
-app.get('/*.css', function (request, response) {
-    less.render('body { background-color: #fff;}', function (error, tree) {
-        tree.toCSS({ compress: true });
-    });           
-});
-*/
 app.get('/disclaimer', function (request, response) {
-	response.render('disclaimer');
+	response.render('disclaimer', {
+        pageId: 'disclaimer',
+    });
 });
 app.get('/', function (request, response) {
-	response.render('index', {paragraphs:[], paragraphCount:5, startWith:true});
+	response.render('index', {
+        pageId: 'index',
+        paragraphs: [], 
+        paragraphCount: 5, 
+        startWith: true});
 });
 app.post('/', function (request, response) {
 	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || 5,
@@ -63,7 +61,8 @@ app.post('/', function (request, response) {
 	}
 
 	response.render('index', {
-        paragraphs:paragraphs,
+        pageId: 'index',
+        paragraphs: paragraphs,
         paragraphCount: paragraphCount,
         startWith: request.body['start-with']
     });
