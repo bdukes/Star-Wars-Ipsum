@@ -6,7 +6,5 @@ form(action="/",method="post")
         input(type="checkbox", name="start-with", checked=startWith)
         | Start with "Lucas ipsum dolor sit amet..."
     input(type="submit", value="Generate")
-- if (paragraphs.length)
-    - paragraphs.forEach(function (paragraph) {
-        p= paragraph
-    - })
+each paragraph in paragraphs
+    p= paragraph
