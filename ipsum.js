@@ -2,7 +2,16 @@ var express = require('express'),
     data = require('./data.js'),
     random = require('./random.js'),
     pub_dir = __dirname + '/public',
-    termCount = data.terms.length,
+    levels = {
+        padawan: {
+                     terms: data.commonTerms,
+                     termCount: data.commonTerms.length
+        },
+        'grand-master': {
+            terms: data.extendedTerms,
+            termCount: data.extendedTerms.length
+        }
+    },
     app = express.createServer(express.logger());
 app.configure(function () {
     app.set('view engine', 'jade');
@@ -30,11 +39,13 @@ app.get('/', function (request, response) {
         pageId: 'index',
         paragraphs: [], 
         paragraphCount: 5, 
-        startWith: true});
+        startWith: true,
+        termLevel: 'padawan'});
 });
 app.post('/', function (request, response) {
 	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || 5,
         startWith = request.body['start-with'],
+        level = levels[request.body['term-level']] || levels['padawan'],
 	    paragraphLength = 500,
 	    paragraphs = [],
 	    i, j,
@@ -46,7 +57,7 @@ app.post('/', function (request, response) {
 		while (paragraph.length < paragraphLength) {
 			sentenceLength = startWith ? 10 : random.getRandomInteger(4, 10);
 			for (j = 0; j < sentenceLength; j++) { 
-				term = data.terms[random.getRandomInteger(0, termCount)];
+				term = level.terms[random.getRandomInteger(0, level.termCount)];
 				if (j === 0 && !startWith) {
 					term = term[0].toUpperCase() + term.slice(1);
 				}
@@ -64,7 +75,8 @@ app.post('/', function (request, response) {
         pageId: 'index',
         paragraphs: paragraphs,
         paragraphCount: paragraphCount,
-        startWith: request.body['start-with']
+        startWith: request.body['start-with'],
+        termLevel: request.body['term-level'] 
     });
 });
 
