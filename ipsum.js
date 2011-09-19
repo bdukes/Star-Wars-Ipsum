@@ -12,6 +12,14 @@ var express = require('express'),
             termCount: data.extendedTerms.length
         }
     },
+    defaultIndexOptions = {
+        pageId: 'index',
+        paragraphs: [], 
+        paragraphCount: 5, 
+        startWith: true,
+        termLevel: 'padawan',
+        debugMesasge: ''
+    },
     app = express.createServer(express.logger());
 app.configure(function () {
     app.set('view engine', 'jade');
@@ -32,20 +40,16 @@ app.configure('production', function () {
 app.get('/disclaimer', function (request, response) {
 	response.render('disclaimer', {
         pageId: 'disclaimer',
+        debugMesasge: ''
     });
 });
 app.get('/', function (request, response) {
-	response.render('index', {
-        pageId: 'index',
-        paragraphs: [], 
-        paragraphCount: 5, 
-        startWith: true,
-        termLevel: 'padawan'});
+	response.render('index', defaultIndexOptions);
 });
 app.post('/', function (request, response) {
-	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || 5,
-        startWith = request.body['start-with'],
-        level = levels[request.body['term-level']] || levels['padawan'],
+	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || defaultIndexOptions.paragraphCount,
+        startWith = request.body['start-with'] || defaultIndexOptions.startWith,
+        level = levels[request.body['term-level']] || levels[defaultIndexOptions.termLevel],
 	    paragraphLength = 500,
 	    paragraphs = [],
 	    i, j,
@@ -76,7 +80,8 @@ app.post('/', function (request, response) {
         paragraphs: paragraphs,
         paragraphCount: paragraphCount,
         startWith: request.body['start-with'],
-        termLevel: request.body['term-level'] 
+        termLevel: request.body['term-level'],
+       debugMessage: 'request.body.term-level = ' + request.body['term-level'] 
     });
 });
 
