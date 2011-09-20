@@ -18,5 +18,12 @@ form(action="/",method="post")
                     input(type="radio", name="term-level", value="grand-master", checked=isGrandMaster)
                     | Jedi Grand Master
         input(type="submit", value="Generate")
-each paragraph in paragraphs
-    p= paragraph
+if paragraphs.length > 0
+    ul#results-tools
+        li.copy-text
+            button Copy Text
+        li.copy-html
+            button Copy HTML
+    #results
+        each paragraph in paragraphs
+            p= paragraph
