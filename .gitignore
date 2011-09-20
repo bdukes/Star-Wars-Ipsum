@@ -1,2 +1,4 @@
 *~
+*.swp
+*.css
 node_modules
