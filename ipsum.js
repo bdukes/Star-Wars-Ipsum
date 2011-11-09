@@ -47,7 +47,7 @@ app.get('/', function (request, response) {
 });
 app.post('/', function (request, response) {
 	var paragraphCount = parseInt(request.body['paragraph-count'], 10) || defaultIndexOptions.paragraphCount,
-        startWith = request.body['start-with'] || defaultIndexOptions.startWith,
+        startWith = request.body['start-with'],
         level = levels[request.body['term-level']] || levels[defaultIndexOptions.termLevel],
 	    paragraphLength = 500,
 	    paragraphs = [],
@@ -80,7 +80,7 @@ app.post('/', function (request, response) {
         paragraphCount: paragraphCount,
         startWith: request.body['start-with'],
         termLevel: request.body['term-level'],
-       debugMessage: 'request.body.term-level = ' + request.body['term-level'] 
+       debugMessage: 'start-with = ' + request.body['start-with'] 
     });
 });
 
