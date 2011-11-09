@@ -26,7 +26,6 @@ app.configure(function () {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
-    app.use(express.compiler({ src: pub_dir, enable: ['less']}));
 });
 app.configure('development', function () {
     app.use(express.static(pub_dir));
