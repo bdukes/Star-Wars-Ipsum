@@ -1,9 +1,11 @@
 {
-	"name": "star-wars-ipsum",
+	"name": "star-trek-ipsum",
 	"version": "0.0.1",
 	"dependencies": {
-		"express": "2.x",
-		"jade": "~0.16"
+		"express": "^2.5.11",
+		"jade": "^0.16.4"
 	},
-	"engines": { "node": "~0.4"  }
+	"engines": {
+		"node": "~0.4"
+	}
 }

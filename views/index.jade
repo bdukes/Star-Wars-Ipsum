@@ -6,17 +6,17 @@ form(action="/",method="post")
            | Number of Paragraphs
         label.start-with
             input(type="checkbox", name="start-with", checked=startWith)
-            | Start with "Lucas ipsum dolor sit amet..."
+            | Start with "Lieutenant ipsum where no one sit amet has gone before..."
         - var isGrandMaster = termLevel === 'grand-master';
         ol.term-level
             li
                 label.term-level-padawan(title="Just the most common terms")
                     input(type="radio", name="term-level", value="padawan", checked=!isGrandMaster)
-                    | Padawan
-            li
-                label.term-level-grand-master(title="More obscure references from the extended universe")
-                    input(type="radio", name="term-level", value="grand-master", checked=isGrandMaster)
-                    | Jedi Grand Master
+                    | Starfleet Officer
+            //- li
+            //-     label.term-level-grand-master(title="More obscure references from the extended universe")
+            //-         input(type="radio", name="term-level", value="grand-master", checked=isGrandMaster)
+            //-         | Fleet Admiral
         input(type="submit", value="Generate")
     //h3 DEBUG
     //p= debugMessage
